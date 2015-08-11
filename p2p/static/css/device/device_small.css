@@ -1,0 +1,14 @@
+@media screen and (min-device-width: 200px) and (max-device-width: 400px){
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 200px;
+	  height: 270px;
+	}
+}
+	div#img_container {
+		text-align:center;
+		margin:0 auto;
+	}

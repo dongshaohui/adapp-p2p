@@ -1,0 +1,95 @@
+@media screen and (max-device-width: 200px){
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 40px;
+	  height: 60px;
+	}
+}
+
+
+@media screen and (min-device-width: 200px) and (max-device-width: 400px){
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 150px;
+	  height: 200px;
+	}
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 600px){
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 180px;
+	  height: 245px;
+	}
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1000px){
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 230px;
+	  height: 300px;
+	}
+}
+
+@media screen and (min-device-width: 1000px) and (max-device-width: 1399px) {
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 400px;
+	  height: 500px;
+	}
+}
+
+@media screen and (min-device-width: 1000px) and (max-device-width: 1399px) {
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 400px;
+	  height: 500px;
+	}
+}
+
+/* bug of WeChat browser */
+@media screen and (min-device-width: 1439px) and (max-device-width: 1441px) {
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 150px;
+	  height: 180px;
+	}
+}
+
+@media screen and (min-device-width: 1441px) {
+	img#person {
+/*	  padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;*/
+	  width: 100px;
+	  height: 130px;
+	}
+}
+
+
+div#img_container {
+	text-align:center;
+	margin:0 auto;
+}

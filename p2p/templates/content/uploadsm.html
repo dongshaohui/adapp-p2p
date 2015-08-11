@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>包子的人脸星象店铺</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=yes" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="/static/css/jquerymobile.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="/static/css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="/static/css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="/static/css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		<link rel="stylesheet" href="/static/css/device/device_adapt.css" />
+		
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+		<!-- Extras for: Cards.html -->
+
+    </head>
+    <body>
+
+        
+    <div data-role="page" data-theme='b'>
+
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+	    <a href="/" data-ajax="false"><i class='icon-tasks'></i></a>
+	    <h1>人脸检测结果</h1>
+	</div>
+        
+        <div data-role="content">   
+			<ul data-nativedroid-plugin='cards'>
+			<!-- 分列布局 -->
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<div id="img_container">
+						<img id="person" src="{{ image_link }}">
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<li data-cards-type='text'>
+						<h1>相面结果</h1>
+						<ul>
+							<li>性别：{{ face_features.gender }} </li>
+							<li>年龄：{{ face_features.age }} </li>
+							<li>种族：{{ face_features.race }}</li>
+							<!-- <li>
+								{% if face_features.smile == True %}
+									你在笑耶，笑起来好看耶~~
+								{% else %}
+									你没有在笑耶，笑一笑十年少~~
+								{% endif %}
+							</li> -->
+						</ul>
+						<!-- <h2>Subtitle of a default card</h2> -->
+						<!-- <p></p> -->
+					</li>
+				</div>
+				<!-- <div class="ui-block-c">
+				<li data-cards-type='traffic' data-cards-traffic-route='{"from":"42.350742,-71.083217","to":"42.353709,-71.053613","type" : "coords"}'>
+					<h1><strong>18 minutes</strong> to Home</h1>
+					<h2>Normal traffic on US-101 N</h2>
+					<a href='#'><i class='icon-screenshot'></i>Navigate</a>
+				</li>
+				</div> -->
+			</div>
+			<!-- 布局结束 -->				
+
+
+				<li data-cards-type='sports'>
+					<h1>Bayern M&uuml;nchen<span>4</span></h1>
+					<h1>Barcelona<span>0</span></h1>
+					<h2>Final, April 23</h2>
+				</li>
+
+				<li data-cards-type='text'>
+					<h1>Default Card</h1>
+					<h2>Subtitle of a default card</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+				</li>
+				
+				<li data-cards-type='text'>
+					<h1>TweetFeed</h1>
+					<h2>#jquery</h2>
+					<p>Twitter API v1 has gone. So try to use: <a href='https://dev.twitter.com/docs/embedded-timelines'>Embedded-timelines</a></p>
+				</li>
+							
+				<li data-cards-type='text'>
+					<h1>Default Card</h1>
+					<h2>Subtitle of a default card</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+				</li>
+				<li data-cards-type='text'>
+					<h1>Default Card</h1>
+					<h2>Subtitle of a default card</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+				</li>
+			</ul>
+
+	        
+        </div>
+		<div id="footer" data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="/faceapp/facesm" data-icon="camera">面像&星象</a></li>
+					<li><a href="/faceapp/facematch" data-icon="heart">相面速配</a></li>
+					<!-- <li><a href="#" data-icon="list-ul">相似脸排行</a></li> -->
+					<li><a href="/faceapp/info" data-icon="tags">应用介绍</a></li>
+				</ul>
+			</div>
+		</div>    
+    </div>
+
+    <script src="/static/js/nativedroid.script.js"></script>
+    </body>
+</html>

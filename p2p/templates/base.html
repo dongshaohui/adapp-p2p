@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<title>
+			{% block title %}
+				包子的人脸星象店铺
+			{% endblock %}
+		</title>
+		{% include 'resource.html' %}
+		
+		<!-- 文件上传插件 -->
+		{% block fileupload %}
+		
+		{% endblock %}
+		
+    </head>
+    <body>
+		{% include 'baidu_tongji.html' %}
+        
+    <div data-role="page" data-theme='b'>
+		{% include 'panel.html' %}
+		
+		<!-- header part -->
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+		    <a href="/" data-ajax="false"><i class='icon-home'></i></a>
+		    <h1>
+				{% block header %}
+					包子的人脸星象店铺
+				{% endblock %}
+			</h1>
+		</div>
+		<!-- header part end -->
+        <div data-role="content">
+			{% block info_notice %}
+				{% include 'messages/notice.html' %}
+			{% endblock %}
+			{% block face_listview %}
+
+
+			{% endblock %}
+        </div>
+		{% include 'footer.html' %}
+    </div>
+    </body>
+</html>
