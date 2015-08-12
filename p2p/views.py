@@ -13,15 +13,10 @@ def home(request):
 	return render(request, 'content/home.html')
 	
 def p2pproduct(request):	
-	f = None
-	image_link = None	
 	if request.method == 'POST':
-		image_link = handle_uploaded_file(request.GET['name'],request.body)
-		face_attrs_dict = face_detect(image_link)
-		face_features,face_num = face_attrs(face_attrs_dict)
-		return render(request,'content/uploadsm.html',{'file':f,'image_link':image_link,'face_features':face_features})
+		return
 	elif request.method == 'GET':
-		return render(request, 'content/facesm.html')
+		return render(request, 'content/p2pproduct.html')
 
 
 # accept image upload post request
